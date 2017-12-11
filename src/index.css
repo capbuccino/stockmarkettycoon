@@ -1,0 +1,103 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 80px;
+  line-height: 80px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.emptySquare {
+  background: #fff;
+  border: 1px solid #fff;
+  float: left;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.player1 {
+	height: 25%;
+	width: 25%;
+	background-color: red;
+	top: 0px; 
+	left: 0px;
+	z-index: 1;
+	position: absolute;
+	border-radius: 25px;
+}
+.player2 {
+	height: 25%;
+	width: 25%;
+	background-color: blue;
+	top: 0px; 
+	right: 0px;
+	z-index: 1;
+	position: absolute;
+	border-radius: 25px;
+}
+.player3 {
+	height: 25%;
+	width: 25%;
+	background-color: green;
+	bottom: 0px; 
+	left: 0px;
+	z-index: 1;
+	position: absolute;
+	border-radius: 25px;
+}
+.player4 {
+	height: 25%;
+	width: 25%;
+	background-color: yellow;
+	bottom: 0px; 
+	right: 0px;
+	z-index: 1;
+	position: absolute;
+	border-radius: 25px;
+}
